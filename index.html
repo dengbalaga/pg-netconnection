@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Phonegap Internet</title>
+
+<script>
+if (navigator.network.connection.type == Connection.NONE) {
+    alert('Geen internet :(');
+}
+else {
+    // nothing
+};
+
+
+
+</script>
+
+<script>
+function onDeviceReady() {
+    document.addEventListener("offline", function() {
+        alert("No internet connection");
+    }, false);
+}
+</script>
+</head>
+
+<body>
+</body>
+</html>
