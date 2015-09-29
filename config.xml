@@ -41,6 +41,9 @@
         Define a specific version of PhoneGap to build into your app.-->
         <preference name="phonegap-version"       value="3.5.0" />
     
+	
+	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="SplashScreen" value="splash" />
 
     <!-- Plugins -->
 
@@ -64,6 +67,8 @@
     <gap:plugin name="org.apache.cordova.splashscreen"  />
     <gap:plugin name="org.apache.cordova.vibration"  />
 
+
+<gap:splash src="splash.png" />
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
