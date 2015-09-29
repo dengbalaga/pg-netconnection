@@ -43,7 +43,7 @@
     
 	
 	<preference name="SplashScreenDelay" value="10000" />
-	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreen" value="screen" />
 
     <!-- Plugins -->
 
@@ -68,7 +68,7 @@
     <gap:plugin name="org.apache.cordova.vibration"  />
 
 
-<gap:splash src="splash.png" />
+
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
