@@ -24,7 +24,7 @@
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
@@ -43,7 +43,7 @@
     
 	
 	<preference name="SplashScreenDelay" value="10000" />
-	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreen" value="screen" />
 
     <!-- Plugins -->
 
@@ -68,7 +68,7 @@
     <gap:plugin name="org.apache.cordova.vibration"  />
 
 
-<gap:splash src="splash.png" />
+
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
@@ -133,6 +133,18 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+		
+		   <!-- you can use any density that exists in the Android project -->
+    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-hdpi"/>
+    <splash src="res/screen/android/screen-ldpi-portrait.png" density="land-ldpi"/>
+    <splash src="res/screen/android/screen-mdpi-portrait.png" density="land-mdpi"/>
+    <splash src="res/screen/android/screen-xhdpi-portrait.png" density="land-xhdpi"/>
+    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+    <splash src="res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+    <splash src="res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+    <splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+		
+		
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
